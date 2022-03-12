@@ -13,13 +13,15 @@ public interface EmployeeService {
 
     List<EmployeeModel> getAllEmployees();
 
-    ResponseEntity<EmployeeModel> getEmployee(Integer id);
-
-    void deleteEmployee(Integer id);
-
-    EmployeeModel saveEmployee();
-
-    EmployeeModel updateEmployee(Integer id, EmployeeModel employee);
+//    ResponseEntity<EmployeeModel> getEmployee(Integer id);
+//
+//    void deleteEmployee(Integer id);
+//
+//    EmployeeModel saveEmployee();
+//
+//    EmployeeModel saveEmployee(EmployeeModel customer);
+//
+//    EmployeeModel updateEmployee(Integer id, EmployeeModel employee);
 
     
 }

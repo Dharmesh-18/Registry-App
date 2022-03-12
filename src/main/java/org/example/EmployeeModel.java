@@ -3,17 +3,19 @@ package org.example;
 
 import javax.persistence.*;
 
-@Entity(name = "employee")
+@Entity(name = "details")
 public class EmployeeModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-//    @Column(name = "customer_id")
     private Integer id;
     private String name;
+
     private String email;
+
     private String password;
     private long contact;
+
 
     public Integer getId() {
         return id;

@@ -24,17 +24,14 @@ public class DefaultEmployeeService implements EmployeeService {
     public void setEmployeeRepository(EmployeeRepository repository) {
         this.repository = repository;
     }
-
-
-//    public EmployeeModel saveCustomer(EmployeeModel employee) {
-//        return repository.saveAndFlush(employee);
-//    }
-
-
-
+    
+    public EmployeeModel saveEmployee(EmployeeModel employee) {
+        return repository.saveAndFlush(employee);
+    }
 
     @Override
     public List<EmployeeModel> getAllEmployees() {
+//        System.out.println(repository.findAll().get(0));
         return repository.findAll();
     }
 
@@ -58,8 +55,14 @@ public class DefaultEmployeeService implements EmployeeService {
 //            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Customer not present to be deleted!!");
 //        }
 //    }
+
 //    @Override
 //    public EmployeeModel saveEmployee() {
+//        return null;
+//    }
+
+//    @Override
+//    public EmployeeModel saveEmployee(EmployeeModel employeeModel) {
 //        return repository.saveAndFlush(employee);
 //    }
 
