@@ -17,8 +17,9 @@ import java.util.List;
 
 import java.util.List;
 
-@RestController
-@RequestMapping("/api/details")
+//@RestController
+//@RequestMapping("/api/details")
+@Controller
 public class EmployeeController {
 
     @Autowired
@@ -28,8 +29,20 @@ public class EmployeeController {
     public List<EmployeeModel> getAllCustomers() {
         return employeeService.getAllEmployees();
     }
+//
+@RequestMapping("/index")
+    public String  login(){
+        return "index";
+}
+@RequestMapping("/welcomePage")
+    public String  welcome(){
+        return "WelcomePage";
+    }
 
-
+    @RequestMapping("/newEntry")
+    public String  newEntry(){
+        return "NewEntry";
+    }
 
 
 
