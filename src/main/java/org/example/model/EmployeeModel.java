@@ -1,4 +1,4 @@
-package org.example;
+package org.example.model;
 
 
 import javax.persistence.*;
@@ -64,7 +64,7 @@ public class EmployeeModel {
                 ", name='" + name + '\'' +
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
-                ", contact=" + contact +
+                ", contact=" + contact +'\''+
                 '}';
     }
 }

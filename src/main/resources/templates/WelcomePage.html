@@ -13,32 +13,24 @@
 
   
 
-    <h2 align="center" >WELCOME!!!!!!!</h2> 
-
-
-
-    <form action=""> 
-
-  
+    <h2 align="center" >WELCOME!!!!!!!</h2>
 
         <div align="center"> 
 
-   	    <button type="submit"><a href = "NewEntry.html">Add User</a></button>
+   	    <button type="submit"><a th:href = "@{newEntry}">Add User</a></button>
    	    <br>
    	    <br>
    	    <br>
   	  
 		
-            <button type="submit">Logout</button> 
+            <button type="submit"><a th:href="@{logout}">Logout</a></button>
           
 
           
 
         </div>
 
-        </div> 
 
-    </form> 
 
 </body> 
 

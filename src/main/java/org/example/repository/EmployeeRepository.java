@@ -1,6 +1,6 @@
-package org.example;
+package org.example.repository;
 
-import org.example.EmployeeModel;
+import org.example.model.EmployeeModel;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

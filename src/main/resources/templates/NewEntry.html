@@ -1,9 +1,13 @@
-<!DOCTYPE html> 
+<!DOCTYPE >
 
-<html> 
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta charset="ISO-8859-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-  
+</head>
 
 <body> 
 
@@ -11,7 +15,7 @@
 
     <h2 align="center" >Add new user!!!!</h2> 
 
-    <form action=""> 
+    <form action="newEntry" method="post">
 
   
 
@@ -49,10 +53,14 @@
   	    <br>
 		
             <button type="submit">Save</button>
-            
-            <button type="submit"><a href= "WelcomePage.html">Close</a></button>
-            
 
-          
+			</div>
+	</form>
+            
+            <button type="submit"><a th:href= "@{/Back}">Close</a></button>
+</body>
+</html>
 
-        </div>
+
+
+
